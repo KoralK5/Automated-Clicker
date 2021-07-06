@@ -9,11 +9,11 @@ while True:
 	color = Image.fromarray(img).convert('RGB').getcolors()
 
 	if (2, (26, 141, 199)) in color:
-		print('blue')
 		press_and_release('z')
+		print('blue')
 	if (2, (237, 121, 12)) in color:
-		print('orange')
 		press_and_release('x')
+		print('orange')
 	if (2, (199, 43, 22)) in color:
-		print('red')
 		press_and_release('c')
+		print('red')
