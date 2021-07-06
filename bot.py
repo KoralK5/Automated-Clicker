@@ -4,6 +4,8 @@ from PIL import Image, ImageGrab
 from win32api import GetSystemMetrics
 from keyboard import press_and_release
 
+print('Ready!')
+
 x, y = GetSystemMetrics(0), GetSystemMetrics(1)
 b, o, r = 0, 0, 0
 prev = ('', 1)
