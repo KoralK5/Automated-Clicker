@@ -5,7 +5,7 @@ from keyboard import press_and_release
 
 while True:
 	x, y = GetSystemMetrics(0),GetSystemMetrics(1)
-	img = np.array(ImageGrab.grab(bbox=(x//2-1, y-171, x//2+1, y-170)))
+	img = np.array(ImageGrab.grab(bbox=(x//2, y-171, x//2+2, y-170)))
 	color = Image.fromarray(img).convert('RGB').getcolors()
 
 	if (2, (26, 141, 199)) in color:
